@@ -11,19 +11,26 @@ import {
     Typography,
     Box
 
- } from "@material-ui/core";
+ } from "@material-ui/core"; 
 import {
     ArrowBack,
     AssignmentInd,
     Home,
-    App
+    App,
+    ContactMail
 } from '@material-ui/icons'
 
 const Navbar = () => {
     return (
-        <div>
-            
-        </div>
+        <Box component="nav">
+            <AppBar position="static" style={{background: "#222"}}>
+                <Toolbar >
+                    <IconButton>
+                        <ArrowBack style={{color: "tomato"}} />
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+        </Box>
     )
 }
 
